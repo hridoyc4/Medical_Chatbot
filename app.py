@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, jsonify, request
 from src.helper import download_hugging_face_embeddings
 from langchain_pinecone import PineconeVectorStore
@@ -56,4 +57,3 @@ def chat():
 if __name__ == '__main__':
     print("Starting server...")
     app.run(host="0.0.0.0", port=8080, debug=True)
-    
